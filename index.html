@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>个人主页</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="left-info">
+		<div class="headshot">
+			<img src="img/touxiang.jpg" alt="我的头像">
+		</div>
+		<ul>
+			<li class="on"><a href="#me">About</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#project">Project</a></li>
+			<li><a href="#cnt">Contact</a></li>
+		</ul>
+		<div class="ico-box">
+			<a href="" title="分享到微博" class="ico1">
+				<img src="img/sina.png" alt="">
+			</a>
+			<a href="" title="分享到微信" class="ico2">
+				<img src="img/wechat.png" alt="">
+			</a>
+			<a href="" title="分享到Facebook" class="ico3">
+				<img src="img/Facebook.png" alt="">
+			</a>
+			<a href="" title="分享Twitter" class="ico4">
+				<img src="img/Twitter.png" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="right-info">
+		<div class="info-box">
+			<h3 id="me">关于我</h3>
+			<div class="search-box">
+				<input type="text" placeholder="请输入关键字">
+				<span></span>
+			</div>
+			<div class="person-info">
+				<p>我的姓名:<span>郭聪</span></p>
+				<p>性别:<span>男</span></p>
+				<p>年龄:<span>未知</span></p>
+				<p>学历:<span>未知</span></p>
+				<p>居住地:<span>未知</span></p>
+				<div class="zishu-box">
+					<span class="zishu">我的自述:</span>
+					<div class="zishu-text">我是一个处在在大学末尾，职场门口的。。。。。</div>
+				</div>
+			</div>
+		</div>
+		<div class="work-box">
+			<h3 id="work">我的工作</h3>
+			<div class="work-info">none</div>
+			<p>等待着用时间来把这填满</p>
+		</div>
+		<div class="pro-box">
+			<h3 id="project">我的项目</h3>
+			<div class="clear">
+				<div class="pro-img">
+					<img src="img/news.png" alt="腾讯新闻">
+					<p>仿腾讯新闻页面</p>
+				</div>
+				<div class="pro-img">
+					<img src="img/list.png" alt="">
+					<p>仿制淘宝商城</p>
+				</div>
+				<div class="pro-img">
+					<img src="img/taobao.png" alt="">
+					<p>防淘宝首页</p>
+				</div>
+				<div class="pro-img">
+					<img src="img/person.png" alt="">
+					<p>个人网站</p>
+				</div>
+				<div class="pro-img">
+					<img src="img/QQmusic.png" alt="">
+					<p>仿制QQ音乐网页版</p>
+				</div>
+				<div class="pro-img">
+					<img src="img/deng.jpg" alt="">
+					<p>。。。。</p>
+				</div>
+			</div>
+		</div>
+		<div class="cnt-box">
+			<h3 id="cnt">我的联系方式</h3>
+			<div class="cnt-list">
+				<div class="cnt-info">
+					<div class="cnt-ico">
+						<span class="qq"></span>
+					</div>
+					<a href="" class="ico-text" title="QQ联系方式">10000</a>
+				</div>
+				<div class="cnt-info">
+					<div class="cnt-ico">
+						<span class="weixin"></span>
+					</div>
+					<a href="" class="ico-text" title="微信联系方式">10000</a>
+				</div>
+				<div class="cnt-info">
+					<div class="cnt-ico">
+						<span class="weibo"></span>
+					</div>
+					<a href="" class="ico-text" title="微博联系方式">无极</a>
+				</div>
+				<div class="cnt-info">
+					<div class="cnt-ico">
+						<span class="phone"></span>
+					</div>
+					<a href="" class="ico-text" title="手机联系方式">188888888888</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg_left"></div>
+    <div class="bg_right"></div>
+	<div class="bg_img"></div>
+	
+	<script>
+		var li = document.getElementsByTagName("li");
+		for(var i=0;i<li.length;i++){
+			(function(i){
+				li[i].onclick = function(){
+					for(var j=0;j<li.length;j++){
+						li[j].className = "";
+					}
+					li[i].className = "on";
+				}
+			})(i)
+		}
+	</script>
+</body>
+</html>
